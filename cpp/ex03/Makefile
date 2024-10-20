@@ -1,5 +1,5 @@
 NAME = repetitive
-SRC = ClapTrap.cpp  main.cpp ScavTrap.cpp FragTrap.cpp
+SRC = ClapTrap.cpp  main.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 CXX = c++ 
 FLAGS = -Wall -Wextra -Werror -std=c++98
 $(NAME):

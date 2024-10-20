@@ -7,7 +7,7 @@ typedef std::string str;
 
 class ClapTrap{
 protected:
-    str             name;
+    str      name;
     unsigned int    hitPoints;
     unsigned int    energyPoints;
     unsigned int    attackDamage;
