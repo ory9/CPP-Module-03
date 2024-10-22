@@ -1,4 +1,4 @@
-NAME = serena
+NAME = scavTrap
 SRC = ClapTrap.cpp  main.cpp ScavTrap.cpp
 CXX = c++ 
 FLAGS = -Wall -Wextra -Werror -std=c++98

@@ -4,7 +4,6 @@
 
 class  FragTrap : public ClapTrap{
 public:
-    FragTrap();
     FragTrap(str name);
     FragTrap(FragTrap const &src);
     ~FragTrap();

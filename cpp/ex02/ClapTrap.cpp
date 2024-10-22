@@ -7,7 +7,7 @@ ClapTrap::ClapTrap(std::string name) : name(name), hitPoints(10), energyPoints(1
     std::cout  << "\033[032m" << "ClapTrap " <<name << " Created" << "\033[0m" << std::endl;
     std::cout << std::setw(25) << std::setw(5) << this->hitPoints << " (hitPoints) " << "Created" << std::endl;;
     std::cout << std::setw(25) << std::setw(5) << this->energyPoints << " (energyPoints) " << "Created" << std::endl;;
-    std::cout << std::setw(25) << std::setw(5) << this->attackDamage << " (attackDamage) " << "Created" << std::endl;
+    std::cout << std::setw(25) << std::setw(5) << this->attackDamage << " (attackDamage) " << "Created" << std::endl << std::endl;
 }
  
 ClapTrap::ClapTrap(const ClapTrap& obj){
@@ -84,7 +84,7 @@ void ClapTrap::takeDamage(unsigned int amount){
 }
 
 void ClapTrap::beRepaired(unsigned int amount){
-    std::cout << "ClapTap " << "\33[032m" << this->name << "\33[0m" << " has repaired itself !!! gaining " << amount << " Hit Points"<< std::endl;
+    std::cout << "ClapTap " << "\33[032m" << this->name << "\33[0m" << " has repaired itself !!! gaining " << amount << " Hit Points"<< std::endl<< std::endl;
     this->hitPoints += amount;
 }
 //======= Member Functions End =======

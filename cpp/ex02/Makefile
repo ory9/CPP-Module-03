@@ -1,4 +1,4 @@
-NAME = repetitive
+NAME = fragTrap
 SRC = ClapTrap.cpp  main.cpp ScavTrap.cpp FragTrap.cpp
 CXX = c++ 
 FLAGS = -Wall -Wextra -Werror -std=c++98

@@ -2,10 +2,10 @@
 
 int main(){
     ClapTrap Brian("Brian");
-    ClapTrap Ojok("Ojok");
+    ClapTrap Denis("Denis");
 
-    Brian.attack("Ojok");
-    Ojok.takeDamage(Brian.getAttackDamage());
-    Ojok.beRepaired(2);
+    Brian.attack("Denis");
+    Denis.takeDamage(Brian.getAttackDamage());
+    Denis.beRepaired(2);
     return 0;
 }

@@ -3,7 +3,6 @@
 
 class ScavTrap : public ClapTrap{
 public:
-    ScavTrap();
     ScavTrap(str Name);
     ScavTrap(ScavTrap const& src);
     ~ScavTrap();

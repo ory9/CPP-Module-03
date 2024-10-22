@@ -1,7 +1,6 @@
 #include "ScavTrap.hpp"
-//======= Constructors Start =======
-ScavTrap::ScavTrap(){}
 
+//======= Constructors Start =======
 ScavTrap::ScavTrap(str Name): ClapTrap(){
     this->setName(Name);
     this->setHitPoints(100);
@@ -10,7 +9,7 @@ ScavTrap::ScavTrap(str Name): ClapTrap(){
     std::cout << "\033[034m" << "ScavTrap " << this->name << "\033[0m" << std::endl;
     std::cout << std::setw(25) << std::setw(5)<< this->hitPoints << " (Hit Points) Created " << std::endl;
     std::cout << std::setw(25) << std::setw(5) << this->energyPoints << " (Energy Points) Created " << std::endl;
-    std::cout << std::setw(25) << std::setw(5) << this->attackDamage << " (Attack Damage) Created " << std::endl;
+    std::cout << std::setw(25) << std::setw(5) << this->attackDamage << " (Attack Damage) Created " << std::endl << std::endl;
 }
 
 ScavTrap::ScavTrap(ScavTrap const& src): ClapTrap(){
@@ -38,11 +37,11 @@ ScavTrap &ScavTrap::operator = (ScavTrap const & src){
 
 //======= Member functions Start ====== 
 void ScavTrap::attack(const std::string& target){
-    std::cout << "Wicked ScavTrap " << "\033[031m" << this->name <<"\033[0m" << " attacked " << target << " causing " << this->attackDamage \
-    << " attack Damage" << std::endl;
+    std::cout << "\033[034m" << "Wicked ScavTrap " << this->name << " attacked " << target << " causing " << this->attackDamage \
+    << " attack Damage" <<"\033[0m" << std::endl ;
 }
 
 void ScavTrap::guardGate(){
-    std::cout << "Wicked ScavTrap " << "\033[031m" << this->name <<"\033[0m" << " is now in Gate keeper mode." << std::endl;
+    std::cout << "\033[034m" << "Wicked ScavTrap "  << this->name  << " is now in Gate keeper mode." <<"\033[0m" << std::endl;
 }
 //======= Member functions End ====== 

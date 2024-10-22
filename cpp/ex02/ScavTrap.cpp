@@ -38,11 +38,11 @@ ScavTrap &ScavTrap::operator = (ScavTrap const & src){
 
 //======= Member functions Start ====== 
 void ScavTrap::attack(const std::string& target){
-    std::cout << "Wicked ScavTrap " << "\033[031m" << this->name <<"\033[0m" << " attacked " << target << " causing " << this->attackDamage \
-    << " attack Damage" << std::endl;
+    std::cout << "\033[034m" << "Wicked ScavTrap " << this->name << " attacked " << target << " causing " << this->attackDamage \
+    << " attack Damage" << "\033[0m" << std::endl;
 }
 
 void ScavTrap::guardGate(){
-    std::cout << "Wicked ScavTrap " << "\033[031m" << this->name <<"\033[0m" << " is now in Gate keeper mode." << std::endl;
+    std::cout << "\033[034m" << "Wicked ScavTrap " << this->name << " is now in Gate keeper mode." <<"\033[0m" << std::endl;
 }
 //======= Member functions End ====== 

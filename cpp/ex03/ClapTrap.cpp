@@ -7,7 +7,7 @@ ClapTrap::ClapTrap(std::string name) : name(name), hitPoints(10), energyPoints(1
     std::cout  << "\033[032m" << "ClapTrap " <<name << " Created" << "\033[0m" << std::endl;
     std::cout << std::setw(25) << std::setw(5) << this->hitPoints << " (hitPoints) " << "Created" << std::endl;;
     std::cout << std::setw(25) << std::setw(5) << this->energyPoints << " (energyPoints) " << "Created" << std::endl;;
-    std::cout << std::setw(25) << std::setw(5) << this->attackDamage << " (attackDamage) " << "Created" << std::endl;
+    std::cout << std::setw(25) << std::setw(5) << this->attackDamage << " (attackDamage) " << "Created" << std::endl << std::endl;
 }
  
 ClapTrap::ClapTrap(const ClapTrap& obj){
@@ -17,7 +17,7 @@ ClapTrap::ClapTrap(const ClapTrap& obj){
 
 //======= Destructor Start =======
 ClapTrap::~ClapTrap(){
-    std::cout << "\33[031m" << this->name << " has been destroyed. " << "\33[0m" << std::endl;
+    std::cout << "[Destructor] "<< "\33[031m" << this->name << " has been destroyed. " << "\33[0m" << std::endl;
 }
 //======= Destructor End =======
 

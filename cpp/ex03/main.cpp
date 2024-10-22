@@ -1,29 +1,39 @@
 #include "DiamondTrap.hpp"
 
-int main(){
-    ClapTrap Brian("Brian");
-    ClapTrap Ojok("Ojok");
-    ScavTrap Obinna("Obinna");
-    FragTrap Odule("Odule");
-    DiamondTrap Okema("Okema");
+int main()
+{
+    DiamondTrap Godfrey("Godfrey");
 
-    Brian.attack("Ojok");
-    Ojok.takeDamage(Brian.getAttackDamage());
-    Ojok.beRepaired(2);
-
-    Obinna.guardGate();
-    Obinna.attack("Ojok");
-    Ojok.takeDamage(Obinna.getAttackDamage());
-    Ojok.beRepaired(10);
-
-    Odule.attack("Obinna");
-    Obinna.takeDamage(Odule.getAttackDamage());
-    Obinna.beRepaired(50);
-    Odule.highFivesGuys();
-
-    Okema.ScavTrap::attack("Obinna");
-    Obinna.takeDamage(Okema.getAttackDamage());
-    Obinna.beRepaired(20);
-    Okema.whoAmI();
+    Godfrey.guardGate();
+    Godfrey.highFivesGuys();
+    Godfrey.whoAmI();
+    Godfrey.ScavTrap::attack("Brain");
     return 0;
 }
+
+// int main(){
+//     ClapTrap Person("Person");
+//     ClapTrap Robert("Robert");
+//     ScavTrap Andrew("Andrew");
+//     FragTrap Stephen("Stephen");
+//     DiamondTrap Ivan("Ivan");
+
+//     Person.attack("Robert");
+//     Robert.takeDamage(Person.getAttackDamage());
+//     Robert.beRepaired(2);
+
+//     Andrew.guardGate();
+//     Andrew.attack("Robert");
+//     Robert.takeDamage(Andrew.getAttackDamage());
+//     Robert.beRepaired(10);
+
+//     Stephen.attack("Andrew");
+//     Andrew.takeDamage(Stephen.getAttackDamage());
+//     Andrew.beRepaired(50);
+//     Stephen.highFivesGuys();
+
+//     Ivan.ScavTrap::attack("Andrew");
+//     Andrew.takeDamage(Ivan.getAttackDamage());
+//     Andrew.beRepaired(20);
+//     return 0;
+// }

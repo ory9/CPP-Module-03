@@ -9,6 +9,6 @@ public:
     ~ScavTrap();
     ScavTrap & operator = (ScavTrap const & src);
     virtual void attack(const str & target);
-    void guardGate();
+    void guardGate() const;
 private:
 };

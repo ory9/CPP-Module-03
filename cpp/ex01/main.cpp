@@ -2,15 +2,11 @@
 
 int main(){
     ClapTrap Brian("Brian");
-    ClapTrap Ojok("Ojok");
-    ScavTrap Obinna("Obinna");
+    ScavTrap James("James");
 
-    Brian.attack("Ojok");
-    Ojok.takeDamage(Brian.getAttackDamage());
-    Ojok.beRepaired(2);
-    Obinna.guardGate();
-    Obinna.attack("Ojok");
-    Ojok.takeDamage(Obinna.getAttackDamage());
-    Ojok.beRepaired(10);
+    James.guardGate();
+    James.attack("Denis");
+    Brian.takeDamage(James.getAttackDamage());
+    Brian.beRepaired(10);
     return 0;
 }

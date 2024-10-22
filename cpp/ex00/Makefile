@@ -1,9 +1,8 @@
 NAME = claptrap
 SRC = ClapTrap.cpp  main.cpp
-CXX = c++ 
-FLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = c++ -Wall -Wextra -Werror -std=c++98
 $(NAME):
-	$(CXX) $(FLAGS) $(SRC) -o $(NAME)
+	$(CXXFLAGS) $(SRC) -o $(NAME)
 all: $(NAME)
 clean:
 	rm -f $(NAME)

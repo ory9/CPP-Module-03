@@ -15,11 +15,11 @@ FragTrap::FragTrap(str name): ClapTrap(){
     std::cout << "\033[036m" << "FragTrap " << this->name << "\033[0m" << std::endl;
     std::cout << std::setw(25) << std::setw(5)<< this->hitPoints << " (Hit Points) Created " << std::endl;
     std::cout << std::setw(25) << std::setw(5) << this->energyPoints << " (Energy Points) Created " << std::endl;
-    std::cout << std::setw(25) << std::setw(5) << this->attackDamage << " (Attack Damage) Created " << std::endl;
+    std::cout << std::setw(25) << std::setw(5) << this->attackDamage << " (Attack Damage) Created " << std::endl << std::endl;
 }
     
 FragTrap::~FragTrap(){
-    std::cout << "\033[031m" << "FragTrap " << this->name  << " *** Time - Out ***" << "\033[0m"<< std::endl;
+    std::cout << "[Destructor] " << "\033[031m" << "FragTrap " << this->name  << " *** Time - Out ***" << "\033[0m"<< std::endl;
 }
 //====== Constructors End ======
 

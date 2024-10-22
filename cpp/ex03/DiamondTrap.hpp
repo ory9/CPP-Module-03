@@ -12,5 +12,5 @@ public:
     DiamondTrap & operator = (DiamondTrap const & src);
     void whoAmI();
 private:
-    str _name;
+    str name;
 };
