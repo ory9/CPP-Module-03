@@ -1,11 +1,15 @@
 #include "ScavTrap.hpp"
 
 //======= Constructors Start =======
+ScavTrap::ScavTrap(){
+    std::cout << "Default Constructor Called" << std::endl<< std::endl;
+}
+
 ScavTrap::ScavTrap(str Name): ClapTrap(){
-    this->setName(Name);
-    this->setHitPoints(100);
-    this->setEnergyPoints(50);
-    this->setAttackDamage(20);
+    this->name = Name;
+    this->hitPoints = 100;
+    this->energyPoints = 50;
+    this->attackDamage = 20;
     std::cout << "\033[034m" << "ScavTrap " << this->name << "\033[0m" << std::endl;
     std::cout << std::setw(25) << std::setw(5)<< this->hitPoints << " (Hit Points) Created " << std::endl;
     std::cout << std::setw(25) << std::setw(5) << this->energyPoints << " (Energy Points) Created " << std::endl;
@@ -25,10 +29,10 @@ ScavTrap::~ScavTrap(){
 ScavTrap &ScavTrap::operator = (ScavTrap const & src){
     if (this != &src)
     {
-        this->name = src.getName();
-        this->hitPoints = src.getHitPoints();
-        this->attackDamage = src.getAttackDamage();
-        this->energyPoints = src.getEnergyPoints();
+        this->name = src.name;
+        this->hitPoints = src.hitPoints;
+        this->attackDamage = src.attackDamage;
+        this->energyPoints = src.energyPoints;
     }
     return *this;
 
