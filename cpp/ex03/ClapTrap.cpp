@@ -65,6 +65,14 @@ unsigned int ClapTrap::getEnergyPoints(void) const{
 unsigned int ClapTrap::getAttackDamage(void) const{
     return this->attackDamage;
 }
+
+void ClapTrap::printData(){
+    std::cout << this->hitPoints << std::endl;
+}
+
+void ClapTrap::setData(unsigned int y){
+    hitPoints = y;
+}
 //======= Helper Member Functions End =======
 
 //======= Member Functions Start =======

@@ -23,6 +23,8 @@ public:
     void setAttackDamage(unsigned int data);
     str getName() const;
     void setName(str name);
+    void printData();
+    void setData(unsigned int);
     unsigned int getHitPoints(void) const;
     unsigned int getEnergyPoints(void) const;
     unsigned int getAttackDamage(void) const;
