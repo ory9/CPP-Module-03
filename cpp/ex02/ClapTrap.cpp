@@ -1,7 +1,10 @@
 #include "ClapTrap.hpp"
 
 //======= Constructors start =======
-ClapTrap::ClapTrap(){}
+
+ClapTrap::ClapTrap(): name("unamed"),hitPoints(0), energyPoints(0), attackDamage(0) {
+    std::cout << "ClapTrap Default Constructor Called" << std::endl<< std::endl;
+}
 
 ClapTrap::ClapTrap(std::string name) : name(name), hitPoints(10), energyPoints(10), attackDamage(0){
     std::cout  << "\033[032m" << "ClapTrap " <<name << " Created" << "\033[0m" << std::endl;
@@ -25,49 +28,23 @@ ClapTrap::~ClapTrap(){
 ClapTrap & ClapTrap::operator = (const ClapTrap& cop){
     if (this != &cop)
     {
-        this->hitPoints = cop.getHitPoints();
-        this->hitPoints = cop.getEnergyPoints();
-        this->hitPoints = cop.getAttackDamage();
+        this->hitPoints = cop.hitPoints;
+        this->energyPoints = cop.energyPoints;
+        this->attackDamage = cop.attackDamage;
     }
     return *this;
 }
 //======= Copy Assigment Operator End =======
 
-//======= Helper Member Functions Start =======
-void ClapTrap::setHitPoints(unsigned int data){
-    hitPoints = data;
-}
-
-void ClapTrap::setEnergyPoints(unsigned int data){
-    energyPoints = data;
-}
-
-void ClapTrap::setAttackDamage(unsigned int data){
-    attackDamage = data;
-}
-
-void ClapTrap::setName(str name){
-    this->name = name;
-}
-
-str ClapTrap::getName() const{
-    return this->name;
-}
-
-unsigned int ClapTrap::getHitPoints(void) const{
-    return this->hitPoints;
-}
-    
-unsigned int ClapTrap::getEnergyPoints(void) const{
-    return this->energyPoints;
-}
-
-unsigned int ClapTrap::getAttackDamage(void) const{
-    return this->attackDamage;
-}
-//======= Helper Member Functions End =======
-
 //======= Member Functions Start =======
+void ClapTrap::printData(){
+    std::cout << this->hitPoints << std::endl;
+}
+
+void ClapTrap::setData(unsigned int y){
+    hitPoints = y;
+}
+
 void ClapTrap::attack(const std::string& target){
     if (this->energyPoints > 0)
     {
@@ -84,7 +61,15 @@ void ClapTrap::takeDamage(unsigned int amount){
 }
 
 void ClapTrap::beRepaired(unsigned int amount){
-    std::cout << "ClapTap " << "\33[032m" << this->name << "\33[0m" << " has repaired itself !!! gaining " << amount << " Hit Points"<< std::endl<< std::endl;
+    std::cout << "ClapTap " << "\33[032m" << this->name << "\33[0m" << " has repaired itself !!! gaining " << amount << " Hit Points"<< std::endl;
     this->hitPoints += amount;
+}
+
+void ClapTrap::printData(){
+    std::cout << this->hitPoints << std::endl;
+}
+
+void ClapTrap::setData(unsigned int y){
+    hitPoints = y;
 }
 //======= Member Functions End =======

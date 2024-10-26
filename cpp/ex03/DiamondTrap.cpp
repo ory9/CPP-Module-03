@@ -2,7 +2,7 @@
 
 //======= Constructors start =======
 DiamondTrap::DiamondTrap(){
-    std::cout << "Default Constructor Called" << std::endl;
+    std::cout << "DiamondTrap Default Constructor Called." <<std::endl;
 }
 
 DiamondTrap::DiamondTrap(DiamondTrap const & src): ClapTrap(src), ScavTrap(src), FragTrap(src){

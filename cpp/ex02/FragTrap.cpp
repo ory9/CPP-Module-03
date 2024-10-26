@@ -1,6 +1,10 @@
 #include "FragTrap.hpp"
 
 //======= Constructors Start =======
+FragTrap::FragTrap(){
+    std::cout << "FragTrap Default Constructor Called" << std::endl<< std::endl;
+}
+
 FragTrap::FragTrap(FragTrap const &src): ClapTrap(){
     *this = src;
 }
@@ -25,10 +29,10 @@ FragTrap::~FragTrap(){
 FragTrap & FragTrap::operator = (FragTrap const & src){
     if (this != &src)
     {
-        this->name = src.getName();
-        this->hitPoints = src.getHitPoints();
-        this->energyPoints = src.getEnergyPoints();
-        this->attackDamage = src.getAttackDamage();
+        this->name = src.name;
+        this->hitPoints = src.hitPoints;
+        this->energyPoints = src.energyPoints;
+        this->attackDamage = src.attackDamage;
     }
     return *this;
 }

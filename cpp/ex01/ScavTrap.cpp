@@ -2,10 +2,10 @@
 
 //======= Constructors Start =======
 ScavTrap::ScavTrap(){
-    std::cout << "Default Constructor Called" << std::endl<< std::endl;
+    std::cout << "ScavTrap Default Constructor Called" << std::endl<< std::endl;
 }
 
-ScavTrap::ScavTrap(str Name): ClapTrap(){
+ScavTrap::ScavTrap(str Name){
     this->name = Name;
     this->hitPoints = 100;
     this->energyPoints = 50;
@@ -16,7 +16,7 @@ ScavTrap::ScavTrap(str Name): ClapTrap(){
     std::cout << std::setw(25) << std::setw(5) << this->attackDamage << " (Attack Damage) Created " << std::endl << std::endl;
 }
 
-ScavTrap::ScavTrap(ScavTrap const& src): ClapTrap(){
+ScavTrap::ScavTrap(ScavTrap const& src): ClapTrap(src){
     *this = src;
 }
 

@@ -17,6 +17,7 @@ int main()
 //     ScavTrap Andrew("Andrew");
 //     FragTrap Stephen("Stephen");
 //     DiamondTrap Ivan("Ivan");
+//     DiamondTrap op;
 
 //     Person.attack("Robert");
 //     Robert.takeDamage(Person.getAttackDamage());

@@ -21,6 +21,8 @@ public:
     void setHitPoints(unsigned int data);
     void setEnergyPoints(unsigned int data);
     void setAttackDamage(unsigned int data);
+    void printData();
+    void setData(unsigned int);
     str getName() const;
     void setName(str name);
     unsigned int getHitPoints(void) const;
