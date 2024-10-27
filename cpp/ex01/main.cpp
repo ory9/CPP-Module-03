@@ -1,6 +1,7 @@
 #include "ScavTrap.hpp"
 
 int main(){
+
     ClapTrap Brian("Brian");
     ScavTrap James("James");
 
