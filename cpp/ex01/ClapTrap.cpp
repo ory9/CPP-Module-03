@@ -3,7 +3,7 @@
 //======= Constructors start =======
 
 ClapTrap::ClapTrap(): name("unamed"),hitPoints(0), energyPoints(0), attackDamage(0) {
-    std::cout << "ClapTrap Default Constructor Called" << std::endl<< std::endl;
+    std::cout << "ClapTrap Default Constructor Called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name) : name(name), hitPoints(10), energyPoints(10), attackDamage(0){
@@ -20,7 +20,7 @@ ClapTrap::ClapTrap(const ClapTrap& obj){
 
 //======= Destructor Start =======
 ClapTrap::~ClapTrap(){
-    std::cout << "\33[031m" << this->name << " has been destroyed. " << "\33[0m" << std::endl;
+    std::cout << "[ClapTrap Destructor]" << "\33[031m" << this->name << " has been destroyed. " << "\33[0m" << std::endl;
 }
 //======= Destructor End =======
 

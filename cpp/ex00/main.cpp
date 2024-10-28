@@ -5,7 +5,7 @@ int main(){
     ClapTrap Denis("Denis");
 
     Brian.attack("Denis");
-    Denis.takeDamage(20);
+    Denis.takeDamage(0);
     Denis.beRepaired(2);
     return 0;
 }
@@ -20,7 +20,7 @@ int main(){
 //     girl.setData(120);
 //     boy = girl;
 //     Brian.attack("Denis");
-//     Denis.takeDamage(20);
+//     Denis.takeDamage(0);
 //     Denis.beRepaired(2);
 //     boy.printData();
 //     return 0;

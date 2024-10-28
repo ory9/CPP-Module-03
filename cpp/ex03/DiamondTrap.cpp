@@ -23,7 +23,7 @@ DiamondTrap::DiamondTrap(str const & name): ClapTrap(name + "_clap_name") {
 
 //======= Destructor Start =======
 DiamondTrap::~DiamondTrap(){
-    std::cout << std::endl << "[Destructor] "<< "\033[31m" << "DiamondTrap Session Ended" << "\033[0m" << std::endl;
+    std::cout << std::endl << "[DiamondTrap Destructor] "<< "\033[31m" << " Session Ended" << "\033[0m" << std::endl;
 }
 //======= Destructor End =======
 

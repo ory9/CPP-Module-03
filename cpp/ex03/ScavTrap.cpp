@@ -1,6 +1,8 @@
 #include "ScavTrap.hpp"
 //======= Constructors Start =======
-ScavTrap::ScavTrap(){}
+ScavTrap::ScavTrap(){
+    std::cout << "ScavTrap Default Constructor is Called." <<std::endl;
+}
 
 ScavTrap::ScavTrap(str Name): ClapTrap(){
     this->setName(Name);
@@ -18,7 +20,7 @@ ScavTrap::ScavTrap(ScavTrap const& src): ClapTrap(){
 }
 
 ScavTrap::~ScavTrap(){
-    std::cout << "[Destructor] "<< "\033[031m" << "ScavTrap " << this->name  << " has ... Exploided " << "\033[0m"<< std::endl;
+    std::cout << "[ScavTrap Destructor] "<< "\033[031m" << "ScavTrap " << this->name  << " has ... Exploided " << "\033[0m"<< std::endl;
 }
 //====== Constructors End ======
 

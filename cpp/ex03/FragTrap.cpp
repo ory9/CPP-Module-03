@@ -1,7 +1,9 @@
 #include "FragTrap.hpp"
 
 //======= Constructors Start =======
-FragTrap::FragTrap(){}
+FragTrap::FragTrap(){
+    std::cout << "FragTrap Default Constructor is Called." <<std::endl;
+}
 
 FragTrap::FragTrap(FragTrap const &src): ClapTrap(){
     *this = src;
@@ -19,7 +21,7 @@ FragTrap::FragTrap(str name): ClapTrap(){
 }
     
 FragTrap::~FragTrap(){
-    std::cout << "[Destructor] " << "\033[031m" << "FragTrap " << this->name  << " *** Time - Out ***" << "\033[0m"<< std::endl;
+    std::cout << "[FragTrap Destructor] " << "\033[031m" << this->name  << " *** Time - Out ***" << "\033[0m"<< std::endl;
 }
 //====== Constructors End ======
 
@@ -38,11 +40,11 @@ FragTrap & FragTrap::operator = (FragTrap const & src){
 
 //======= Member functions Start ====== 
 void FragTrap::highFivesGuys(void){
-    std::cout << "@FragTrap " << " Who wants a High Five Now ?" <<std::endl;
+    std::cout << "FragTrap " << " Who wants a High Five Now ?" <<std::endl;
 }
 
 void FragTrap::attack(const str & target){
-    std::cout << "@FragTrap " << "\033[031m" << this->name <<"\033[0m" << " attacked " << target << " causing " << this->attackDamage \
+    std::cout << "FragTrap " << "\033[031m" << this->name <<"\033[0m" << " attacked " << target << " causing " << this->attackDamage \
     << " attack Damage" << std::endl;
 }
 //======= Member functions End ====== 

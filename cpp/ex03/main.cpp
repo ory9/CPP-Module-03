@@ -7,9 +7,15 @@ int main()
     Godfrey.guardGate();
     Godfrey.highFivesGuys();
     Godfrey.whoAmI();
-    Godfrey.ScavTrap::attack("Brain");
+    Godfrey.ScavTrap::attack("Brian");
     return 0;
 }
+
+// int main()
+// {
+//     ClapTrap *obj = new DiamondTrap;
+//     delete obj;
+// }
 
 // int main(){
 //     ClapTrap Person("Person");

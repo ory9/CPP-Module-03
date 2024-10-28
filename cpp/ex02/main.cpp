@@ -14,3 +14,9 @@ int main(){
     Thomas.highFivesGuys();
     return 0;
 }
+
+// int main()
+// {
+//     ClapTrap *obj = new FragTrap;
+//     delete obj;
+// }

@@ -21,7 +21,7 @@ FragTrap::FragTrap(str name): ClapTrap(){
 }
     
 FragTrap::~FragTrap(){
-    std::cout << "\033[031m" << "FragTrap " << this->name  << " *** Time - Out ***" << "\033[0m"<< std::endl;
+    std::cout << "[FragTrap Destructor] " << "\033[031m" << this->name  << " *** Time - Out ***" << "\033[0m"<< std::endl;
 }
 //====== Constructors End ======
 

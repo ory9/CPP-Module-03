@@ -12,11 +12,8 @@ int main(){
     return 0;
 }
 
-
 // int main()
 // {
 //     ClapTrap *obj = new ScavTrap;
-//     ClapTrap boy("boy");
-//     ScavTrap girl("girl");
 //     delete obj;
 // }

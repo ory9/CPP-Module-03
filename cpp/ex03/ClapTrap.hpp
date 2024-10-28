@@ -16,7 +16,7 @@ public:
     ClapTrap(str name);
     ClapTrap(unsigned int data);
     ClapTrap(const ClapTrap& obj);
-    ~ClapTrap();
+    virtual ~ClapTrap();
     ClapTrap & operator = (const ClapTrap& cop);
     void setHitPoints(unsigned int data);
     void setEnergyPoints(unsigned int data);
